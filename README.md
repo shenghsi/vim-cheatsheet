@@ -153,6 +153,7 @@ N              # repeat search in opposite direction
 :ls           # list all open buffers
 :sp file      # open a file in a new buffer and split window
 :vsp file     # open a file in a new buffer and vertically split window
+:on[ly][!]    # close all other windows except current one
 Ctrl + ws     # split window
 Ctrl + ww     # switch windows
 Ctrl + wq     # quit a window
