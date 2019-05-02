@@ -52,15 +52,19 @@ A        # insert (append) at the end of the line
 o        # append (open) a new line below the current line
 O        # append (open) a new line above the current line
 ea       # insert (append) at the end of the word
-Esc      # exit insert mode
 ```
 
 ## Commands in insert mode i_CTRL- , for help type :help i_ctrl-w 
 ```
-CTRL-W	 # Delete the word before the cursor (see |i_backspacing| about joining lines). See the section "word motions", |word-motions|, for the definition of a word.
-CTRL-U   # Delete all entered characters in the current line (see |i_backspacing| about joining lines).
+Esc       # go back to Normal mode. Finish abbreviation. 
+          # Abbreviations are used in Insert mode, Replace mode and Command-line mode. If you enter a word that is an abbreviation, it is replaced with the word it stands for.  This can be used to save typing for often used long words.  And you can use it to automatically correct obvious spelling errors.
+          # Examples: 	:iab ms Microsoft     	:iab tihs this
+CTRL-[    # go back to Normal mode. Finish abbreviation.
+CTRL-C    # go back to Normal mode. Do not check for abbreviations.
+CTRL-W    # Delete the word before the cursor (see |i_backspacing| about joining lines). See the section "word motions", |word-motions|, for the definition of a word.
+CTRL-U    # Delete all entered characters in the current line (see |i_backspacing| about joining lines).
 ```
-
+  
 ## Editing
 ```bash
 r        # replace a single character
